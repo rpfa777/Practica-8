@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Practica 8 Periodico</title>
+    <style>
+        body {
+            background-color: #e6f0fa;
+            color: #000000;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 10px;
+        }
+        .contenedor {
+            max-width: 1100px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 15px;
+            border: 1px solid #000000;
+            box-sizing: border-box;
+        }
+        .encabezado-superior {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #000000;
+            padding-bottom: 10px;
+        }
+        .texto-secundario {
+            font-size: 13px;
+        }
+        .titulo-principal {
+            font-family: Georgia, serif;
+            font-size: 2.2rem;
+            margin: 0;
+        }
+        nav {
+            text-align: center;
+            margin: 10px 0;
+        }
+        nav a {
+            color: #000000;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+        hr {
+            border: 0;
+            border-top: 1px solid #000000;
+            margin: 10px 0;
+        }
+        hr.linea-clara {
+            border-top: 1px solid #cce0ff;
+        }
+        .seccion-principal {
+            display: flex;
+            gap: 20px;
+            margin-top: 15px;
+        }
+        .columna-izquierda {
+            width: 68%;
+            border: 1px solid #000000;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+        .columna-derecha {
+            width: 30%;
+        }
+        .encabezado-gratuito {
+            text-align: center;
+            font-family: Georgia, serif;
+            font-size: 13px;
+        }
+        .grid-tres-columnas {
+            display: flex;
+            gap: 15px;
+            margin-top: 10px;
+        }
+        .columna-interna {
+            flex: 1;
+        }
+        .columna-interna h3, .columna-derecha h2 {
+            font-family: Georgia, serif;
+            margin-top: 0;
+        }
+        .columna-interna p, .columna-derecha p {
+            font-size: 13px;
+            line-height: 1.4;
+        }
+        .meta-info {
+            font-size: 11px;
+            color: #555555;
+        }
+        .flex-imagenes {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        footer {
+            text-align: center;
+            font-size: 13px;
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contenedor">
+        <header>
+            <div class="encabezado-superior">
+                <div>
+                    <h1 class="titulo-principal">Practica 8 Periodico</h1>
+                </div>
+            </div>
+        </header>
+
+        <nav>
+            <a href="formulario.html"><b>Formulario</b></a>
+            <hr>
+        </nav>
+
+        <main>
+            <div class="seccion-principal">
+                
+                <div class="columna-izquierda">
+                    <div class="encabezado-gratuito">
+                        <b>Estas historias principales son de lectura gratuita.</b>
+                        <hr class="linea-clara">
+                    </div>
+
+                    <div class="grid-tres-columnas">
+                        <div class="columna-interna">
+                            <h3>Cómo las elecciones intermedias podrían complicar el nuevo periodo de la Suprema Corte</h3>
+                            <p>Incluso antes de que los jueces comiencen su nuevo periodo hoy, el tribunal ha pasado el verano resolviendo solicitudes de respuesta rápida sobre disputas electorales.</p>
+                            <span class="meta-info"></span>
+                        </div>
+
+                        <div class="columna-interna" style="text-align: center;">
+                            <img src="img1.png" width="100%" height="220" border="1">
+                            <span class="meta-info">con la corte teniendo que resolver tres casos diferentes</span>
+                        </div>
+
+                        <div class="columna-interna">
+                            <h3>Jueces escucharán una demanda ambiental de gran escala</h3>
+                            <p>La Suprema Corte comenzará su periodo con un caso histórico sobre si los gobiernos locales pueden demandar a las compañías petroleras por los daños causados por el cambio climático.</p>
+                            <span class="meta-info"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="columna-derecha">
+                    <div style="text-align: center;">
+                        <img src="img2.png" width="100%" height="180" border="1">
+                    </div>
+                    <h2>Esta receta de ñoquis con coles de Bruselas tiene más de 27,000 valoraciones</h2>
+                    <p>"¿Quieres mejorar un día entre semana? Cocina esto. ¿Quieres niños felices? Cocina esto. ¿Quieres deslumbrar a tus invitados? Cocina esto," escribió un lector.</p>
+                    <span class="meta-info"></span>
+
+                    <div class="flex-imagenes">
+                        <img src="img3.png" width="30%" height="100" border="1">
+                        <img src="img4.png" width="30%" height="100" border="1">
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+        <hr>
+
+        <footer>
+            <p>Ramos Flores Alexis<br>5-i<br>0643</p>
+        </footer>
+    </div>
+
+</body>
+</html>

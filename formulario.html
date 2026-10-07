@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Encuesta - El Periódico Digital</title>
+    <style>
+        body {
+            background-color: #e6f0fa;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .contenedor-encuesta {
+            max-width: 520px;
+            margin: 40px auto;
+            background-color: #ffffff;
+            padding: 25px;
+            border: 1px solid #000000;
+        }
+        h2 {
+            font-family: Georgia, serif;
+            margin-top: 0;
+        }
+        p.pregunta {
+            font-weight: bold;
+            font-size: 15px;
+            margin-bottom: 15px;
+        }
+        .opcion {
+            margin-bottom: 15px;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+        .opcion label {
+            cursor: pointer;
+        }
+        .opcion input {
+            margin-right: 8px;
+        }
+        .botones {
+            margin-top: 20px;
+        }
+        input[type="submit"], input[type="reset"] {
+            padding: 8px 15px;
+            background-color: #ffffff;
+            border: 1px solid #000000;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        input[type="submit"]:hover, input[type="reset"]:hover {
+            background-color: #e6f0fa;
+        }
+        a {
+            color: #000000;
+            text-decoration: none;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contenedor-encuesta">
+        <h2>Encuesta de Interés</h2>
+        <hr color="#000000"><br>
+
+        <form action="" method="post">
+            <p class="pregunta">¿Qué noticia le interesó más?</p>
+
+            <div class="opcion">
+                <label>
+                    <input type="radio" name="noticia" value="elecciones_suprema_corte" required>
+                    Cómo las elecciones intermedias podrían complicar el nuevo periodo de la Suprema Corte
+                </label>
+            </div>
+
+            <div class="opcion">
+                <label>
+                    <input type="radio" name="noticia" value="demanda_ambiental">
+                    Jueces escucharán una demanda ambiental de gran escala
+                </label>
+            </div>
+
+            <div class="opcion">
+                <label>
+                    <input type="radio" name="noticia" value="receta_noquis">
+                    Esta receta de ñoquis con coles de Bruselas tiene más de 27,000 valoraciones
+                </label>
+            </div>
+
+            <div class="botones">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Borrar">
+            </div>
+        </form>
+
+        <br><hr color="#cce0ff"><br>
+        <a href="index.html">← Volver a la Página Principal</a>
+    </div>
+
+</body>
+</html>
